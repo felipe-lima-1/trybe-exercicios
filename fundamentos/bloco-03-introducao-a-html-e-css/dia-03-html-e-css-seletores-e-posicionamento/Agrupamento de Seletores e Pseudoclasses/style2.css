@@ -1,0 +1,31 @@
+h3:hover {
+    border: 2px solid black;
+}
+
+.impar {
+    font-style: italic;
+}
+
+#DIV-MAIOR {
+    font-size: 20px;
+}
+
+#cor-1 {
+    color: red;
+}
+
+#cor-2 {
+    color: green;
+}
+
+#cor-3 {
+    color: blue;
+}
+
+#cor-4 {
+    color: gray;
+}
+
+#cor-5 {
+    color: lightpink;
+}
