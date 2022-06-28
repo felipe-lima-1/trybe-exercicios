@@ -12,6 +12,7 @@ for (let index = 0; index < urgente.length; index += 1) {
     urgente[index].style.backgroundColor = 'purple'
 }
 
+
 const noUrgente = document.querySelectorAll('.no-emergency-tasks h3');
 for (let index = 0; index < noUrgente.length; index += 1) {
     noUrgente[index].style.backgroundColor = 'black'
