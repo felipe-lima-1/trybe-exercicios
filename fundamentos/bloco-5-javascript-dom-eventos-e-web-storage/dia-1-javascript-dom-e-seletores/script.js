@@ -1,11 +1,11 @@
-const header = document.getElementById('header-container');
-header.style.backgroundColor = 'green';
+const titulo = document.getElementById('header-container');
+titulo.style.backgroundColor = 'green';
 
-const emergencyTasks = document.getElementsByClassName('emergency-tasks')[0];
-emergencyTasks.style.backgroundColor = 'lightPink';
+const emergencia = document.getElementsByClassName('emergency-tasks')[0];
+emergencia.style.backgroundColor = 'lightPink';
 
-const noEmergencyTasks = document.getElementsByClassName('no-emergency-tasks')[0];
-noEmergencyTasks.style.backgroundColor = 'rgba(255, 255, 95, 0.87)';
+const noEmergencia = document.getElementsByClassName('no-emergency-tasks')[0];
+noEmergencia.style.backgroundColor = 'rgba(255, 255, 95, 0.87)';
 
 const urgente = document.querySelectorAll('.emergency-tasks h3');
 for (let index = 0; index < urgente.length; index += 1) {
