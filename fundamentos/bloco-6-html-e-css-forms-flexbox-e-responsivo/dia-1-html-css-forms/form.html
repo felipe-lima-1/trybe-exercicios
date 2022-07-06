@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>Formulario do Felipe</header>
+    <br />
+    <main>
+        <form>
+            <div>
+                <label for="nome">Nome :</label>
+                <input type="text" name="nome" id="nome" placeholder="Seu nome" required />
+            </div>
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email" placeholder="Seu e-mail" required />
+            </div>
+            <div>
+                <input type="radio" name="destino" id="destino-1">
+                <label for="destino-1">Cidade </label>
+                <input type="radio" name="destino" id="destino-2">
+                <label for="destino-2">Campo </label>
+                <input type="radio" name="destino" id="destino-3">
+                <label for="destino-3">Praia </label>
+                <input type="radio" name="destino" id="destino-4">
+                <label for="destino-4">Montanhas </label>
+            </div>
+            <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip ?</p>
+            <textarea name="pq-ganhar" id="pq-ganhar" cols="30" rows="10"></textarea>
+            <br>
+            <div>
+            <label for="date">Data :</label>
+            <input type="date" name="date" id="date">
+        </div>
+            <div>
+                <input type="checkbox" name="ofertas" id="ofertas">
+                <label for="ofertas">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+                <br>
+                <input type="checkbox" name="ofertas" id="divulgacao">
+                <label for="divulgacao">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+            </div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Apagar</button>
+        </form>
+    </main>
+</body>
+</html>
