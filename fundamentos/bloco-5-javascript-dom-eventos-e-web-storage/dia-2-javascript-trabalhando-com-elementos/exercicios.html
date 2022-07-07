@@ -57,63 +57,112 @@
   </head>
   <body>
     <script>
-      // 1 - 
+      // 1 -
 
-let newh1 = document.createElement('h1');
-newh1.innerText = 'Exercício 5.2 - JavaScript DOM';
-document.body.appendChild(newh1);
+      let newh1 = document.createElement("h1");
+      newh1.innerText = "Exercício 5.2 - JavaScript DOM";
+      document.body.appendChild(newh1);
 
-// 2 - 
+      // 2 -
 
-let newMain = document.createElement('main');
-newMain.className = 'main-content';
-document.body.appendChild(newMain);
+      let newMain = document.createElement("main");
+      newMain.className = "main-content";
+      document.body.appendChild(newMain);
 
-// 3 - 
+      // 3 -
 
-let newSection = document.createElement('section');
-newSection.className = 'center-content';
-newMain.appendChild(newSection);
+      let newSection = document.createElement("section");
+      newSection.className = "center-content";
+      newMain.appendChild(newSection);
 
-// 4 - 
+      // 4 -
 
-let newP = document.createElement('p');
-newP.innerText = 'Hello World'
-newSection.appendChild(newP);
+      let newP = document.createElement("p");
+      newP.innerText = "Hello World";
+      newSection.appendChild(newP);
 
-// 5 - 
+      // 5 -
 
-let newSection2 = document.createElement('section');
-newSection2.className = 'left-content';
-newMain.appendChild(newSection2);
+      let newSection2 = document.createElement("section");
+      newSection2.className = "left-content";
+      newMain.appendChild(newSection2);
 
-// 6 - 
+      // 6 -
 
-let newSection3 = document.createElement('section');
-newSection3.className = 'right-content';
-newMain.appendChild(newSection3);
+      let newSection3 = document.createElement("section");
+      newSection3.className = "right-content";
+      newMain.appendChild(newSection3);
 
-// 7 - 
+      // 7 -
 
-let imagem = document.createElement('img');
-imagem.src = 'https://picsum.photos/200';
-imagem.className = 'small-image';
-newSection2.appendChild(imagem);
+      let imagem = document.createElement("img");
+      imagem.src = "https://picsum.photos/200";
+      imagem.className = "small-image";
+      newSection2.appendChild(imagem);
 
-// 8 - 
+      // 8 -
 
-let numbers = [ 'Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
-'Sete', 'Oito', 'Nove', 'Dez' ]
-let newUl = document.createElement('ul');
-newSection3.appendChild(newUl);
-for (let index in numbers){
-    let newLi = document.createElement('li');
-    newLi.innerText = numbers[index];
-    newUl.appendChild(newLi);
-}
+      let numbers = [
+        "Um",
+        "Dois",
+        "Três",
+        "Quatro",
+        "Cinco",
+        "Seis",
+        "Sete",
+        "Oito",
+        "Nove",
+        "Dez",
+      ];
+      let newUl = document.createElement("ul");
+      newSection3.appendChild(newUl);
 
-// 9 - 
+      for (let index in numbers) {
+        let newLi = document.createElement("li");
+        newLi.innerText = numbers[index];
+        newUl.appendChild(newLi);
+      }
 
+      // 9 -
+      for (let index = 0; index < 3; index += 1) {
+        let newH3 = document.createElement("h3");
+        newMain.appendChild(newH3);
+      }
+
+      // PARTE 2
+
+      // 1 -
+
+      let newTitle = document.getElementsByTagName("h1");
+      newTitle.className = "Title";
+
+      // 2 -
+
+      let newDescrip = document.getElementsTagName("h3");
+      for (let index = 0; index < 3; index += 1) {
+        newDescrip[index].className = "Description";
+      }
+
+      // 3 -
+
+      let sectionLeft = document.getElementsByClassName("left-content");
+      newMain.removeChild("sectionLeft");
+
+      // 4 -
+
+      let sectionRight = document.getElementsByClassName('right-content');
+      sectionRight.style.marginRight = 'auto';
+
+      // 5 - 
+
+      let sectionColor = document.getElementsByClassName('center-content');
+      sectionColor.parentNode.style.backgroundcolor = 'green';
+
+      // 6 - 
+
+      let ul2 = document.getElementsByTagName('ul')[0];
+      ul2.lastChild.remove();
+      ul2.lastChild.remove();
     </script>
   </body>
 </html>
