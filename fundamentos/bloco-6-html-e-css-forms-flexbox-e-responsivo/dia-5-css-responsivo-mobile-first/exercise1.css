@@ -10,35 +10,35 @@
   *, *:before, *:after {
     box-sizing: inherit;
   }
-  
+/*   
   body {
     
   }
   
   article {
   
-  }
+  } */
   
   h1 {
     font-size: 1.5em;
   }
   
-  h2 {
+  /* h2 {
   
   }
-  
+   */
   img {
       max-width: 100%;
   }
   
-  main {
+  /* main {
   
   }
   
   section {
   
   }
-  
+   */
   figure {
       margin: 0;
   }
