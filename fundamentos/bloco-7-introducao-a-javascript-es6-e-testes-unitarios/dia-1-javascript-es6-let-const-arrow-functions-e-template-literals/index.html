@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<body>
+    <div>
+        <p id="text">Clicks</p>
+    </div>
+    <button id="button_test">click aqui!</button>
+</body>
+<script>
+    let clickCount = 0;
+    let texto = document.getElementById('text');
+    let button = document.getElementById('button_test');
+
+    button.addEventListener('click', () => texto.innerHTML = clickCount += 1);
+</script>
+
+</html>
